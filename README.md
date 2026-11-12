@@ -264,10 +264,3 @@ This avoids expensive square-root operations during search, yielding $O(N \cdot 
 - [ ] Add conversation session summary exports as PDF/CSV.
 
 ---
-
-## 📄 License & Attribution
-
-This project is licensed under the [MIT License](LICENSE).
-
-**Attribution:**
-Inspired by the technical concepts demonstrated in [jchaithra661-sys/ai-support-assistant](https://github.com/jchaithra661-sys/ai-support-assistant) (MIT License). Re-architected with calibrated ML intent classification, sentiment tone adaptation, FAISS vector indexing, and dual-backend RAG response generation.
