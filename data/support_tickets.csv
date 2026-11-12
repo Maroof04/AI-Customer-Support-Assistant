@@ -1,0 +1,331 @@
+ticket_id,query,intent,sentiment,urgency
+TCK-1001,I sent back the returned jacket 10 days ago. When will I get my refund?,refund,negative,high
+TCK-1002,Where is my refund? The money has not reached my bank account yet.,refund,negative,high
+TCK-1003,I was billed twice on my credit card for order #84910. Need immediate refund for the second charge!,refund,negative,high
+TCK-1004,Can I receive my refund as a store credit voucher instead of bank transfer?,refund,neutral,low
+TCK-1005,My return was delivered to your warehouse yesterday. How many days until the refund is credited?,refund,neutral,medium
+TCK-1006,Why haven't I received the refund for my cancelled booking?,refund,negative,high
+TCK-1007,"I got an email saying my refund was issued, but my bank statement shows nothing.",refund,neutral,medium
+TCK-1008,Duplicate payment was deducted from my savings account. Please refund the extra money.,refund,negative,high
+TCK-1009,Is it possible to get an instant refund to my digital wallet balance?,refund,positive,low
+TCK-1010,"Returned the shoes because of wrong size. Looking forward to my money back, thanks!",refund,positive,low
+TCK-1011,You guys charged my debit card twice! Reverse the duplicate transaction right now!,refund,negative,high
+TCK-1012,What is the typical time frame to process a return refund to a Mastercard?,refund,neutral,low
+TCK-1013,Item arrived broken. I want a complete refund including the shipping charges.,refund,negative,high
+TCK-1014,"I returned my package via postal service. Tracking says received, when do I get paid back?",refund,neutral,medium
+TCK-1015,Can you change my refund destination to my PayPal account instead of old expired credit card?,refund,neutral,medium
+TCK-1016,Still waiting for my reimbursement from order #7729. It has been over two weeks!,refund,negative,high
+TCK-1017,"I see a credit memo on my profile, how do I transfer that refund back to my checking account?",refund,neutral,low
+TCK-1018,Two unauthorized charges appeared on my invoice. Reverse them immediately.,refund,negative,high
+TCK-1019,Thanks for accepting the return! Just wondering how many days the refund takes to reflect.,refund,positive,low
+TCK-1020,"Refund status says approved on the website, but money hasn't shown up in my bank.",refund,neutral,medium
+TCK-1021,Do you deduct a restocking fee from my return refund amount?,refund,neutral,low
+TCK-1022,"Terrible experience, product defective and no refund in sight after 7 days.",refund,negative,high
+TCK-1023,Can I opt for gift card refund so I can repurchase another size immediately?,refund,positive,low
+TCK-1024,Bank statement shows two identical charges of $89.99. Issue a refund for one.,refund,negative,high
+TCK-1025,How will I be notified when my return refund has been processed?,refund,neutral,low
+TCK-1026,Kindly process the refund for my returned headphones as soon as possible.,refund,neutral,medium
+TCK-1027,"Very happy with the return pickup, excited to get the refund voucher!",refund,positive,low
+TCK-1028,"My order was cancelled by seller, when will the payment reversal reflect on my Visa?",refund,neutral,medium
+TCK-1029,Never received the parcel and customer care promised a full refund. Still waiting.,refund,negative,high
+TCK-1030,Is there any fee charged if I request a cash refund instead of store balance?,refund,neutral,low
+TCK-1031,I have been overcharged on the invoice total. Refund the price difference please.,refund,negative,medium
+TCK-1032,The refund amount credited is less than what I paid. Why was $15 deducted?,refund,negative,high
+TCK-1033,Great service on the return process! Can you confirm if the refund is underway?,refund,positive,low
+TCK-1034,How many business days does a refund take for international bank cards?,refund,neutral,low
+TCK-1035,I lost my original debit card. How can I get my refund routed to my new card?,refund,neutral,medium
+TCK-1036,Order was returned in original condition. Please release my refund money.,refund,neutral,medium
+TCK-1037,Horrible service! You took my return 3 weeks ago and haven't refunded a single cent!,refund,negative,high
+TCK-1038,Does the refund include the express delivery fees that I originally paid?,refund,neutral,low
+TCK-1039,Please expedite the refund for return RMA-9921.,refund,neutral,medium
+TCK-1040,Can I check my refund status online without calling support?,refund,neutral,low
+TCK-1041,Need refund confirmation receipt for my tax records.,refund,neutral,low
+TCK-1042,Refund my deposit for the cancelled event rental.,refund,neutral,medium
+TCK-1043,My bank says they haven't received any refund authorization from your company.,refund,negative,high
+TCK-1044,Can I transfer my pending refund amount into another shopper's wallet?,refund,neutral,low
+TCK-1045,Where is my return money? It's been 14 business days!,refund,negative,high
+TCK-1046,"Accidental subscription billing, please reverse charge and refund immediately.",refund,negative,high
+TCK-1047,Can you verify if refund voucher REF-8812 is valid?,refund,neutral,low
+TCK-1048,I was promised a full refund by agent John on live chat.,refund,neutral,medium
+TCK-1049,I returned 3 items but only received refund credit for 2 of them.,refund,negative,high
+TCK-1050,The refund was sent to a closed bank account. How do I recover it?,refund,negative,high
+TCK-1051,Why did my refund take 12 days when policy says 3 to 5 days?,refund,negative,medium
+TCK-1052,"Super quick refund turnaround, thanks a lot team!",refund,positive,low
+TCK-1053,Will I get refunded in USD or EUR for my cross-border purchase?,refund,neutral,low
+TCK-1054,Refund rejected without explanation. Why did you refuse my return claim?,refund,negative,high
+TCK-1055,How do I claim a refund for damaged goods during transit?,refund,neutral,medium
+TCK-1056,My credit card was declined at checkout even though I have plenty of balance.,payment,negative,high
+TCK-1057,Why is the payment gateway throwing an error when I enter my card details?,payment,negative,high
+TCK-1058,Do you support payment via Apple Pay or Google Pay on the mobile app?,payment,neutral,low
+TCK-1059,I never received the 3D Secure OTP on my phone to complete the payment transaction.,payment,negative,high
+TCK-1060,Can I split the payment between two different credit cards?,payment,neutral,low
+TCK-1061,Where can I download the official VAT tax invoice for my purchase?,payment,neutral,low
+TCK-1062,"Payment went through on my bank app, but your checkout says transaction failed!",payment,negative,high
+TCK-1063,What international currencies can I use to pay for an order?,payment,neutral,low
+TCK-1064,Is American Express credit card accepted on your platform?,payment,neutral,low
+TCK-1065,My transaction keeps failing at step 3 of checkout. How do I fix this payment problem?,payment,negative,high
+TCK-1066,Can I pay using PayPal credit or monthly installments at checkout?,payment,neutral,low
+TCK-1067,I need a business invoice with my company's GST number and tax ID included.,payment,neutral,medium
+TCK-1068,Love your store! Just wondering if you support crypto payments like Bitcoin?,payment,positive,low
+TCK-1069,Checkout keeps rejecting my postal code for the billing address on my card.,payment,negative,medium
+TCK-1070,Money was deducted from my account but no order confirmation was generated.,payment,negative,high
+TCK-1071,How do I update the default credit card saved in my payment methods?,payment,neutral,low
+TCK-1072,Why was an extra foreign transaction exchange fee charged on my card?,payment,negative,medium
+TCK-1073,Is payment data encrypted and PCI compliant on this website?,payment,neutral,low
+TCK-1074,Can I pay via direct wire transfer or ACH for high value purchases?,payment,neutral,low
+TCK-1075,The payment screen gets stuck on 'Verifying with bank' and never finishes processing.,payment,negative,high
+TCK-1076,Can I change my billing address without affecting the delivery address?,payment,neutral,low
+TCK-1077,Payment completed successfully! Where do I find the receipt for accounting?,payment,positive,low
+TCK-1078,Payment declined with error code ERR_CARD_AUTH_FAILED. What does this mean?,payment,negative,high
+TCK-1079,Do you accept cash payment options or bank money orders?,payment,neutral,low
+TCK-1080,Why did my recurring subscription payment fail this morning?,payment,negative,medium
+TCK-1081,I want to remove my expired debit card from my billing wallet.,payment,neutral,low
+TCK-1082,"Payment checkout was so smooth and fast, thank you!",payment,positive,low
+TCK-1083,My bank says the merchant flagged the transaction as high risk. Please verify.,payment,negative,high
+TCK-1084,How can I request a revised tax invoice with our new corporate address?,payment,neutral,medium
+TCK-1085,Is UPI or Net Banking available for customers paying from India?,payment,neutral,low
+TCK-1086,I tried 3 different cards and none of them work on your checkout page!,payment,negative,high
+TCK-1087,Can I use an international Discover card for my order?,payment,neutral,low
+TCK-1088,Can you email me a copy of the payment receipt for order #5512?,payment,neutral,low
+TCK-1089,Why am I being charged sales tax when my organization is tax exempt?,payment,negative,medium
+TCK-1090,What should I do if my payment timed out during bank authorization?,payment,negative,high
+TCK-1091,Are prepaid gift cards accepted for online checkout payment?,payment,neutral,low
+TCK-1092,"Please help, transaction failed but the amount shows debited on SMS alert.",payment,negative,high
+TCK-1093,Can I save multiple credit cards to my user profile?,payment,neutral,low
+TCK-1094,"Great payment options, was able to checkout in seconds!",payment,positive,low
+TCK-1095,Does your system store my full 16 digit card number or CVV code?,payment,neutral,low
+TCK-1096,"Card reader error on contactless tap, please reset terminal.",payment,negative,medium
+TCK-1097,Can I pay via Klarna or Afterpay in 4 interest-free installments?,payment,neutral,low
+TCK-1098,My payment is pending authorization for over 6 hours. Why?,payment,negative,medium
+TCK-1099,How do I add a corporate purchasing card to my business account?,payment,neutral,low
+TCK-1100,The payment system charged sales tax twice on checkout.,payment,negative,high
+TCK-1101,Do you accept Discover and JCB cards internationally?,payment,neutral,low
+TCK-1102,Can I settle my outstanding balance via direct bank ACH transfer?,payment,neutral,low
+TCK-1103,Why does my billing statement list merchant as ACME Corp?,payment,neutral,low
+TCK-1104,How do I set up recurring automatic payment billing for my team?,payment,neutral,low
+TCK-1105,Card verification code CVV invalid error keeps popping up.,payment,negative,high
+TCK-1106,"Payment gateway maintenance error, when will it be back up?",payment,negative,high
+TCK-1107,Can I pay using my prepaid visa gift card balance?,payment,neutral,low
+TCK-1108,Instant checkout with Apple Pay worked like a charm!,payment,positive,low
+TCK-1109,Is it possible to pay partially with reward points and remainder with card?,payment,neutral,low
+TCK-1110,Why did my debit transaction fail with code 05 Do Not Honor?,payment,negative,high
+TCK-1111,Where is my order? The tracking link hasn't updated in 4 days.,delivery,negative,high
+TCK-1112,My parcel was supposed to arrive yesterday but nothing was delivered.,delivery,negative,high
+TCK-1113,The box arrived crushed and the glass bottle inside was completely shattered!,delivery,negative,high
+TCK-1114,Can I change my delivery address? I entered the wrong apartment number by mistake.,delivery,neutral,high
+TCK-1115,Package tracking says 'Delivered to porch' but there is no package outside my door.,delivery,negative,high
+TCK-1116,How can I track my shipment once it has been dispatched from your hub?,delivery,neutral,low
+TCK-1117,"My package arrived ahead of schedule, thank you so much for fast shipping!",delivery,positive,low
+TCK-1118,Courier driver left the package in the rain and the cardboard is soaked.,delivery,negative,high
+TCK-1119,Can I schedule a specific time delivery window for tomorrow afternoon?,delivery,neutral,low
+TCK-1120,Tracking status shows 'Delivery Attempted - Recipient Not Available' but I was home all day!,delivery,negative,high
+TCK-1121,One item was missing from my delivery box. The packing slip says 3 items but only 2 were inside.,delivery,negative,high
+TCK-1122,Do you deliver to PO Box addresses or military APO bases?,delivery,neutral,low
+TCK-1123,Can I redirect the shipment to a nearby courier pickup locker?,delivery,neutral,medium
+TCK-1124,How many days does standard shipping take to reach Chicago?,delivery,neutral,low
+TCK-1125,The delivery guy refused to bring the heavy parcel up the stairs to my flat.,delivery,negative,medium
+TCK-1126,My shipment is stuck in customs clearance for a week. Can you provide the shipping paperwork?,delivery,negative,high
+TCK-1127,"Awesome delivery speed! Arrived within 24 hours, super impressed!",delivery,positive,low
+TCK-1128,Tracking number provided does not work on the courier website.,delivery,negative,medium
+TCK-1129,Is express overnight delivery available on weekends?,delivery,neutral,low
+TCK-1130,Package arrived with the security seal broken and items missing.,delivery,negative,high
+TCK-1131,Can I provide special gate access instructions for the delivery courier?,delivery,neutral,low
+TCK-1132,Why was my shipment returned to the sender without contacting me?,delivery,negative,high
+TCK-1133,Who is the shipping carrier handling delivery for order #99281?,delivery,neutral,low
+TCK-1134,I accidentally entered my old home address for delivery. Can you update shipping before dispatch?,delivery,neutral,high
+TCK-1135,Delivered in perfect condition and carefully packed. Great job guys!,delivery,positive,low
+TCK-1136,The tracking has been saying 'In Transit' between two facilities for 6 days.,delivery,negative,high
+TCK-1137,Do you require a physical signature upon delivery for high value electronics?,delivery,neutral,low
+TCK-1138,"Shipment arrived with the wrong product inside the box! I ordered a watch, got a case.",delivery,negative,high
+TCK-1139,Can the courier hold the parcel at their facility until I return from vacation?,delivery,neutral,medium
+TCK-1140,What should I do if the parcel is marked delivered but was taken by mistake by neighbor?,delivery,neutral,medium
+TCK-1141,Delivery was fast and customer service kept me updated all the way!,delivery,positive,low
+TCK-1142,Courier left my expensive laptop out on the sidewalk in plain view. Completely unacceptable!,delivery,negative,high
+TCK-1143,How do I calculate international shipping costs for delivery to France?,delivery,neutral,low
+TCK-1144,Can you contact the driver to give him my delivery contact phone number?,delivery,neutral,medium
+TCK-1145,Where do I submit photos of a damaged shipping parcel?,delivery,neutral,medium
+TCK-1146,"My parcel was delayed due to weather, how soon will delivery resume?",delivery,neutral,low
+TCK-1147,"Still waiting for my package, order placed 15 days ago and no delivery yet.",delivery,negative,high
+TCK-1148,Thank you for the quick replacement shipment after the first was lost!,delivery,positive,low
+TCK-1149,Can I choose FedEx instead of DHL for future shipments?,delivery,neutral,low
+TCK-1150,Delivery status has not changed from 'Label Created' for 3 days.,delivery,negative,medium
+TCK-1151,Parcel delivered to the wrong building on my street.,delivery,negative,high
+TCK-1152,Do you offer eco-friendly consolidated shipping for multiple orders?,delivery,neutral,low
+TCK-1153,Delivery driver demanded cash tip before handing over package.,delivery,negative,high
+TCK-1154,Can I pick up my parcel directly from your local fulfillment hub?,delivery,neutral,low
+TCK-1155,"Tracking says delivered at 2 PM, but security cameras show no courier arrived.",delivery,negative,high
+TCK-1156,"Package was damaged in transit, box was torn in half.",delivery,negative,high
+TCK-1157,Will the courier call me before attempting delivery?,delivery,neutral,low
+TCK-1158,How long will my parcel be held at the local post office?,delivery,neutral,low
+TCK-1159,"Order was split into two separate deliveries, where is the second part?",delivery,neutral,medium
+TCK-1160,Can I request contactless delivery drop-off?,delivery,neutral,low
+TCK-1161,"Shipment dispatched on time, arrived safely with fragile stickers.",delivery,positive,low
+TCK-1162,Courier gave my package to a stranger without ID verification.,delivery,negative,high
+TCK-1163,Estimated arrival date changed three times this week.,delivery,negative,medium
+TCK-1164,How can I request signature-required delivery protection?,delivery,neutral,low
+TCK-1165,"Package received safe and sound, prompt courier service!",delivery,positive,low
+TCK-1166,I placed an order 15 minutes ago by mistake. How can I cancel it?,cancellation,neutral,high
+TCK-1167,Please cancel order #8839 immediately before it gets dispatched.,cancellation,neutral,high
+TCK-1168,I want to cancel my monthly recurring subscription. Do not bill me next month.,cancellation,negative,medium
+TCK-1169,How do I stop auto-renewal on my annual pro membership plan?,cancellation,neutral,low
+TCK-1170,I tried clicking cancel order on the dashboard but the button is greyed out.,cancellation,negative,high
+TCK-1171,Can I cancel just one item from my order without canceling the whole order?,cancellation,neutral,medium
+TCK-1172,My order has already been shipped. Can I still cancel the delivery?,cancellation,neutral,medium
+TCK-1173,Cancel my subscription immediately! I was charged without my explicit consent!,cancellation,negative,high
+TCK-1174,Is there any cancellation fee or penalty for terminating my contract early?,cancellation,neutral,low
+TCK-1175,I successfully cancelled my order online. How soon will I receive confirmation?,cancellation,positive,low
+TCK-1176,Please stop shipment on order #3319. I ordered the wrong model.,cancellation,neutral,high
+TCK-1177,I need to cancel my service appointment scheduled for Friday morning.,cancellation,neutral,low
+TCK-1178,Why was my order cancelled automatically by your fraud prevention system?,cancellation,negative,high
+TCK-1179,How many minutes after checkout am I allowed to cancel an order?,cancellation,neutral,low
+TCK-1180,"Cancel my membership right away, I no longer use this service.",cancellation,neutral,medium
+TCK-1181,"If I cancel my subscription today, do I retain access until the end of the billing month?",cancellation,neutral,low
+TCK-1182,Please cancel my backordered item that has been on waitlist for a month.,cancellation,negative,medium
+TCK-1183,"Cancelling my order was super easy on your portal, thanks!",cancellation,positive,low
+TCK-1184,"I told the support agent to cancel my order yesterday, but I just got a shipping notification today!",cancellation,negative,high
+TCK-1185,Can I cancel a pre-order before the official release date?,cancellation,neutral,low
+TCK-1186,I accidentally clicked place order twice. Cancel the duplicate order #9122.,cancellation,neutral,high
+TCK-1187,Where do I find the cancellation link inside my account settings?,cancellation,neutral,low
+TCK-1188,I am furious! Cancel everything on my account right now!,cancellation,negative,high
+TCK-1189,Can I revoke or undo a cancellation request if I change my mind?,cancellation,neutral,low
+TCK-1190,"Cancel order #4492, I found a cheaper alternative elsewhere.",cancellation,neutral,medium
+TCK-1191,Will I get full credit back if I cancel before the seller accepts the order?,cancellation,neutral,low
+TCK-1192,Thank you for promptly canceling the accidental purchase!,cancellation,positive,low
+TCK-1193,Why does the app say 'Cancellation window closed' when I ordered only 30 mins ago?,cancellation,negative,high
+TCK-1194,Cancel my cloud storage add-on renewal please.,cancellation,neutral,low
+TCK-1195,I need to cancel because the estimated delivery date is too late for my event.,cancellation,negative,high
+TCK-1196,Can customer support cancel an in-transit order on my behalf?,cancellation,neutral,medium
+TCK-1197,Please confirm if my cancellation request for order #1089 was received.,cancellation,neutral,low
+TCK-1198,The subscription cancellation page is hidden and confusing. Unsubscribe me now!,cancellation,negative,high
+TCK-1199,Can I cancel an order paid with a gift card?,cancellation,neutral,low
+TCK-1200,Appreciate the quick cancellation and courtesy email!,cancellation,positive,low
+TCK-1201,"Stop the delivery of my order immediately, do not send it out.",cancellation,negative,high
+TCK-1202,How do I pause my subscription temporarily instead of canceling permanently?,cancellation,neutral,low
+TCK-1203,Cancel order #7712 as I no longer need this equipment.,cancellation,neutral,medium
+TCK-1204,You promised to cancel this before shipping and now you sent it anyway!,cancellation,negative,high
+TCK-1205,Is there a deadline to cancel orders placed during flash sales?,cancellation,neutral,low
+TCK-1206,I want to terminate my paid contract at the end of this quarter.,cancellation,neutral,low
+TCK-1207,"Accidentally renewed my yearly plan, please cancel the renewal.",cancellation,neutral,medium
+TCK-1208,Please cancel the booking for hotel reservation #BK-4412.,cancellation,neutral,medium
+TCK-1209,Cancel my pending order because of duplicate items in cart.,cancellation,neutral,high
+TCK-1210,Why was my cancellation request rejected by the vendor?,cancellation,negative,high
+TCK-1211,How do I cancel my newsletter subscription and opt out of emails?,cancellation,neutral,low
+TCK-1212,"Kindly cancel order #2910, customer changed mind.",cancellation,neutral,medium
+TCK-1213,Cannot find the cancel button on mobile browser.,cancellation,negative,medium
+TCK-1214,"Cancel order immediately, I bought the wrong item.",cancellation,neutral,high
+TCK-1215,"If I cancel my order, how long does the pre-authorization hold take to drop?",cancellation,neutral,low
+TCK-1216,Please cancel my account membership and stop future charges.,cancellation,neutral,medium
+TCK-1217,Unsubscribe me from all automated renewal services immediately.,cancellation,negative,high
+TCK-1218,"Cancellation was seamless and painless, 5 star experience!",cancellation,positive,low
+TCK-1219,I want to cancel the shipment before driver picks it up.,cancellation,neutral,high
+TCK-1220,Please cancel my trial subscription before I get charged the full rate.,cancellation,neutral,medium
+TCK-1221,I forgot my password and the reset link is not arriving in my inbox.,account_issue,negative,high
+TCK-1222,My account has been locked after I typed the wrong password 3 times. Please unlock it.,account_issue,negative,high
+TCK-1223,How do I change my registered email address on my account profile?,account_issue,neutral,low
+TCK-1224,I lost access to my 2FA Google Authenticator app and cannot sign into my account.,account_issue,negative,high
+TCK-1225,How can I permanently delete my account and personal data from your database?,account_issue,neutral,medium
+TCK-1226,"Every time I log in, the website logs me out after 2 minutes.",account_issue,negative,medium
+TCK-1227,Can I merge two accounts that were registered with different emails?,account_issue,neutral,low
+TCK-1228,"Password reset was smooth and easy, back in my account now, thanks!",account_issue,positive,low
+TCK-1229,I suspect my account was compromised because unfamiliar orders are showing up.,account_issue,negative,high
+TCK-1230,How do I update my phone number used for SMS verification codes?,account_issue,neutral,low
+TCK-1231,Why does the login page say 'User not found' when I have an active account?,account_issue,negative,high
+TCK-1232,Can I set up two-factor authentication using SMS instead of an authenticator app?,account_issue,neutral,low
+TCK-1233,Unable to update my billing profile name in account settings.,account_issue,neutral,medium
+TCK-1234,My account is suspended for unknown reasons. I need this resolved right now!,account_issue,negative,high
+TCK-1235,How do I download a copy of my account transaction history under GDPR regulations?,account_issue,neutral,low
+TCK-1236,Great security features! Love the biometric login on mobile.,account_issue,positive,low
+TCK-1237,I changed my password but my mobile app still throws an invalid credentials error.,account_issue,negative,medium
+TCK-1238,How do I revoke active login sessions on other devices?,account_issue,neutral,low
+TCK-1239,I did not receive the email verification link during account registration.,account_issue,negative,medium
+TCK-1240,Can I transfer my account loyalty points to a family member's profile?,account_issue,neutral,low
+TCK-1241,Why am I asked for captcha verification on every single login attempt?,account_issue,negative,medium
+TCK-1242,Where do I enter emergency backup recovery codes for 2FA login?,account_issue,neutral,high
+TCK-1243,Locked out of my business account portal and my whole team is blocked. Urgent assist needed!,account_issue,negative,high
+TCK-1244,How do I switch my personal account to a corporate business account?,account_issue,neutral,low
+TCK-1245,Thanks for helping me recover my account so quickly yesterday!,account_issue,positive,low
+TCK-1246,The verification code sent to my phone number expired in 30 seconds. Send a new one.,account_issue,negative,medium
+TCK-1247,How do I manage email marketing preferences and notification settings?,account_issue,neutral,low
+TCK-1248,My username is showing as random characters instead of my actual name in profile.,account_issue,neutral,low
+TCK-1249,Someone tried to log into my account from a strange IP address. What should I do?,account_issue,negative,high
+TCK-1250,Can I link my Google account for one-click social sign-in?,account_issue,neutral,low
+TCK-1251,Account lockout timer keeps resetting back to 30 minutes. Let me in!,account_issue,negative,high
+TCK-1252,How do I view my saved delivery addresses in my user profile?,account_issue,neutral,low
+TCK-1253,"Everything works smoothly now, loving the new user account interface!",account_issue,positive,low
+TCK-1254,I am not receiving any emails from your domain including password resets.,account_issue,negative,high
+TCK-1255,How do I change the language settings on my user profile?,account_issue,neutral,low
+TCK-1256,Please remove my old credit card info from my account records permanently.,account_issue,neutral,medium
+TCK-1257,My profile says email unverified even though I clicked the link in your email.,account_issue,negative,medium
+TCK-1258,Can I invite another team member as an admin on my company account?,account_issue,neutral,low
+TCK-1259,"Super friendly account support, resolved my lockout issue in 5 minutes!",account_issue,positive,low
+TCK-1260,Why does my password require special characters when the error message doesn't say so?,account_issue,negative,low
+TCK-1261,How do I update my profile avatar photo?,account_issue,neutral,low
+TCK-1262,Cannot disable two-factor authentication without master password.,account_issue,negative,medium
+TCK-1263,My account password was changed without my knowledge. Urgent security breach!,account_issue,negative,high
+TCK-1264,How do I export my account data before deleting my profile?,account_issue,neutral,low
+TCK-1265,Login page gives 'Session expired' immediately after entering password.,account_issue,negative,high
+TCK-1266,Can I change my username or is it fixed permanently?,account_issue,neutral,low
+TCK-1267,How do I add a recovery phone number to my account?,account_issue,neutral,low
+TCK-1268,Account reactivation link is expired. Please generate a new one.,account_issue,neutral,medium
+TCK-1269,Why was my user profile downgraded from VIP to standard?,account_issue,negative,medium
+TCK-1270,Can I share my account login with coworkers?,account_issue,neutral,low
+TCK-1271,"Easy password recovery flow, back in business!",account_issue,positive,low
+TCK-1272,How do I revoke API keys generated under my developer profile?,account_issue,neutral,low
+TCK-1273,My profile details will not save when I click update.,account_issue,negative,medium
+TCK-1274,Can I view recent login history and IP addresses for my account?,account_issue,neutral,low
+TCK-1275,"Please unblock my account, I verified my identity via email.",account_issue,neutral,high
+TCK-1276,The mobile app keeps crashing every time I tap on checkout.,technical_support,negative,high
+TCK-1277,I am getting an HTTP 500 Internal Server Error when saving my profile.,technical_support,negative,high
+TCK-1278,The website is extremely slow and images are failing to load.,technical_support,negative,medium
+TCK-1279,Promo code SAVE20 says invalid error even though it is active until tomorrow.,technical_support,negative,medium
+TCK-1280,Shopping cart is not updating when I change item quantities in app.,technical_support,negative,high
+TCK-1281,The checkout button is completely unresponsive and greyed out on screen.,technical_support,negative,high
+TCK-1282,Search bar returns a blank white screen instead of product results.,technical_support,negative,high
+TCK-1283,Website works great on Chrome but web layout is broken on Safari browser.,technical_support,neutral,medium
+TCK-1284,"The latest app update fixed all the lag, running super smooth now!",technical_support,positive,low
+TCK-1285,Getting an SSL connection certificate error when opening checkout website.,technical_support,negative,high
+TCK-1286,Filter by price slider is stuck and doesn't apply to the catalog list.,technical_support,neutral,low
+TCK-1287,Video player for the product demo is buffering endlessly without playing.,technical_support,negative,low
+TCK-1288,Can you check if your API servers are down right now? Nothing is loading.,technical_support,negative,high
+TCK-1289,"Coupon code automatically applied $10 off, great software feature!",technical_support,positive,low
+TCK-1290,My browser console shows CORS errors when attempting to submit the form.,technical_support,negative,high
+TCK-1291,The mobile website has overlapping CSS text on Android devices.,technical_support,neutral,medium
+TCK-1292,PDF invoice generation fails with an unexpected software exception error.,technical_support,negative,medium
+TCK-1293,Which web browsers and operating systems are officially supported by your platform?,technical_support,neutral,low
+TCK-1294,"Your search autocomplete is so fast and accurate, love the UX tech!",technical_support,positive,low
+TCK-1295,Error 502 Bad Gateway appears whenever I try to access order history page.,technical_support,negative,high
+TCK-1296,The 'Remember Me' checkbox doesn't keep me logged in across browser restarts.,technical_support,neutral,low
+TCK-1297,Discount code is applied but the shopping cart total is not recalculating the price.,technical_support,negative,high
+TCK-1298,Push notifications are not coming through on mobile app iOS 18.,technical_support,negative,medium
+TCK-1299,Screen reader accessibility on the navigation menu needs technical improvement.,technical_support,neutral,medium
+TCK-1300,"Dark mode theme looks fantastic and easy on the eyes, great job dev team!",technical_support,positive,low
+TCK-1301,I am stuck in an infinite redirect loop between login and account page.,technical_support,negative,high
+TCK-1302,Clearing browser cache did not resolve the checkout freeze issue on Firefox.,technical_support,negative,high
+TCK-1303,Does your website require third-party cookies to be enabled for web ordering?,technical_support,neutral,low
+TCK-1304,The file upload button fails with Javascript error when attaching a screenshot.,technical_support,negative,medium
+TCK-1305,How do I report a security vulnerability or bug to your engineering team?,technical_support,neutral,low
+TCK-1306,Getting 404 Page Not Found error on the product specification web link.,technical_support,negative,medium
+TCK-1307,"The responsive mobile design on iPad tablet is flawless, thank you!",technical_support,positive,low
+TCK-1308,Why does the site say 'Too Many Requests (429)' when I only searched twice?,technical_support,negative,high
+TCK-1309,The dropdown select box for size and color is unresponsive on touchscreens.,technical_support,negative,high
+TCK-1310,Is there a status page where I can track server outages and scheduled maintenance?,technical_support,neutral,low
+TCK-1311,My cart emptied itself after I spent 30 minutes selecting items! Very frustrating bug!,technical_support,negative,high
+TCK-1312,Can you provide API documentation and SDK for enterprise webhook integrations?,technical_support,neutral,low
+TCK-1313,"Website performance benchmark is top notch, pages load under 1 second!",technical_support,positive,low
+TCK-1314,Form validation error keeps complaining about phone number regex format.,technical_support,negative,medium
+TCK-1315,Mobile app crashes on launch after downloading version 3.2.1.,technical_support,negative,high
+TCK-1316,Audio is out of sync on the video tutorial player.,technical_support,neutral,low
+TCK-1317,Search filters reset automatically whenever I navigate to page 2.,technical_support,negative,medium
+TCK-1318,Getting HTTP 403 Forbidden error on API endpoint call.,technical_support,negative,high
+TCK-1319,The zoom feature on product images is not working on mobile Safari.,technical_support,neutral,low
+TCK-1320,Database connection timeout error displayed on user dashboard.,technical_support,negative,high
+TCK-1321,Website fonts look blurry on high resolution 4K monitors.,technical_support,neutral,low
+TCK-1322,How do I clear app data and local cache on Android app?,technical_support,neutral,low
+TCK-1323,"Coupon code discount applies, then disappears on the final review step.",technical_support,negative,high
+TCK-1324,The modal pop-up dialogue box cannot be closed on smaller screens.,technical_support,negative,medium
+TCK-1325,Getting JavaScript uncaught TypeError in main.bundle.js.,technical_support,negative,high
+TCK-1326,"Super responsive frontend engineering, slick animations and zero bugs!",technical_support,positive,low
+TCK-1327,Cannot scroll down the terms and conditions dialog on Firefox.,technical_support,negative,medium
+TCK-1328,Server returned status code 503 Service Unavailable during flash sale.,technical_support,negative,high
+TCK-1329,Where do I submit crash dump logs from the desktop app?,technical_support,neutral,low
+TCK-1330,"Quick page load times even on slow 3G mobile connections, impressive!",technical_support,positive,low

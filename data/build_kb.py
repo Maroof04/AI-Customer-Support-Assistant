@@ -1,0 +1,203 @@
+import os
+import pandas as pd
+
+DATA_DIR = os.path.dirname(os.path.abspath(__file__))
+
+knowledge_base = [
+    # REFUND
+    {
+        "faq_id": "FAQ-REF-001",
+        "category": "refund",
+        "title": "Refund Processing Timeline",
+        "question": "How long does it take to receive my refund after returning an item?",
+        "keywords": "refund time, refund status, when will refund arrive, money back timeline, bank refund days",
+        "answer": "Refunds are processed within 3 to 5 business days after our warehouse inspects your returned item. Once approved, the funds are credited back to your original payment method within 5 to 7 additional business days depending on your bank's processing cycle.",
+        "action_steps": "1. Check return delivery confirmation in your email. 2. Verify account status under 'Orders > Return Status'. 3. Allow up to 10 business days total before escalating.",
+        "escalation_contact": "billing@support.example.com"
+    },
+    {
+        "faq_id": "FAQ-REF-002",
+        "category": "refund",
+        "title": "Double Charge on Credit Card",
+        "question": "I was charged twice for the same order. How do I get a refund for the duplicate transaction?",
+        "keywords": "charged twice, duplicate transaction, double charge, multiple charges, bank debited twice",
+        "answer": "Duplicate authorizations are typically temporary pending holds released automatically by your financial institution within 24-48 hours. If both transactions have posted permanently on your bank statement, please submit your transaction IDs so our billing team can instantly void the second transaction and issue a full reversal.",
+        "action_steps": "1. Check if the second charge is 'Pending' or 'Posted' on your bank app. 2. Note down the order ID and transaction reference number. 3. Send billing statement screenshot to support.",
+        "escalation_contact": "billing@support.example.com"
+    },
+    {
+        "faq_id": "FAQ-REF-003",
+        "category": "refund",
+        "title": "Refund to Store Credit or Original Payment Method",
+        "question": "Can I receive my refund as store credit or instant gift card instead of bank transfer?",
+        "keywords": "store credit, instant refund, gift card refund, change refund method, wallet credit",
+        "answer": "Yes! When initiating a return, you can choose between an instant store credit voucher (available immediately in your wallet) or a standard refund to your original payment method (takes 5-7 business days).",
+        "action_steps": "1. Go to 'My Account' > 'Returns'. 2. Select 'Store Credit' at the refund destination prompt. 3. The voucher code will be emailed instantly.",
+        "escalation_contact": "support@example.com"
+    },
+
+    # PAYMENT
+    {
+        "faq_id": "FAQ-PAY-001",
+        "category": "payment",
+        "title": "Payment Failed at Checkout",
+        "question": "Why did my credit card or debit card payment fail during checkout?",
+        "keywords": "payment declined, transaction failed, card rejected, 3DS authentication failed, checkout error",
+        "answer": "Card transactions usually fail due to incorrect CVV/expiry details, insufficient funds, 3D Secure OTP timeouts, or anti-fraud security filters from your card issuing bank. We recommend attempting checkout using an alternate card, PayPal, or UPI, or contacting your bank to whitelist international e-commerce payments.",
+        "action_steps": "1. Verify CVV and billing zip code match your bank record. 2. Ensure international/online transactions are enabled on your card. 3. Try completing checkout in an incognito window or via alternate payment method.",
+        "escalation_contact": "payments@support.example.com"
+    },
+    {
+        "faq_id": "FAQ-PAY-002",
+        "category": "payment",
+        "title": "Accepted Payment Methods and Currency",
+        "question": "What payment methods, digital wallets, and currencies do you support?",
+        "keywords": "payment options, accept paypal, apple pay, google pay, crypto, currency conversion, amex",
+        "answer": "We accept Visa, MasterCard, American Express, Discover, PayPal, Apple Pay, Google Pay, and Net Banking/UPI. All orders are processed in USD, CAD, EUR, or GBP depending on your region. Currency conversion fees are handled directly by your card issuer.",
+        "action_steps": "1. Select your preferred currency from the top navigation bar. 2. Choose your payment method on step 3 of checkout.",
+        "escalation_contact": "payments@support.example.com"
+    },
+    {
+        "faq_id": "FAQ-PAY-003",
+        "category": "payment",
+        "title": "Invoice and Tax Receipt Download",
+        "question": "Where can I download a VAT/GST invoice or official tax receipt for my business purchase?",
+        "keywords": "download invoice, tax receipt, VAT invoice, business invoice, GST receipt, proof of purchase",
+        "answer": "Tax invoices are automatically generated as soon as your payment settles. You can download PDF copies at any time from your account dashboard under 'Order History' by clicking 'Download Invoice'. For custom business tax numbers (VAT/EIN), update your billing profile before placing the order.",
+        "action_steps": "1. Log into your account and navigate to 'Orders'. 2. Click the relevant order number. 3. Click 'Download PDF Invoice'.",
+        "escalation_contact": "billing@support.example.com"
+    },
+
+    # DELIVERY
+    {
+        "faq_id": "FAQ-DEL-001",
+        "category": "delivery",
+        "title": "Tracking Package Status and Delayed Shipments",
+        "question": "My package tracking has not updated or my delivery is past the estimated arrival date. What should I do?",
+        "keywords": "package delayed, tracking not updating, where is my order, late delivery, courier stuck",
+        "answer": "Couriers occasionally take 24 to 48 hours to update tracking checkpoints after initial package handover. If your estimated delivery date has passed by more than 2 business days without movement, please contact us with your tracking number so our logistics team can launch a courier tracer.",
+        "action_steps": "1. Check the tracking link in your shipment confirmation email. 2. Check with neighbors or building reception. 3. If past 48 hours of estimated delivery date, contact logistics support.",
+        "escalation_contact": "logistics@support.example.com"
+    },
+    {
+        "faq_id": "FAQ-DEL-002",
+        "category": "delivery",
+        "title": "Damaged or Missing Items in Package",
+        "question": "What should I do if my parcel arrived damaged or items are missing from the box?",
+        "keywords": "damaged package, broken item, missing item, package tampered, parcel arrived damaged",
+        "answer": "We sincerely apologize for any transit mishap. Please take clear photos of the damaged shipping box, courier label, and affected merchandise within 48 hours of delivery. We will arrange a free immediate replacement shipment or full refund.",
+        "action_steps": "1. Take high-resolution photos of the outer box, shipping label, and damaged item. 2. Keep the original packaging materials. 3. Submit photos and order ID to our claims desk.",
+        "escalation_contact": "claims@support.example.com"
+    },
+    {
+        "faq_id": "FAQ-DEL-003",
+        "category": "delivery",
+        "title": "Change Shipping Address After Placing Order",
+        "question": "Can I modify my shipping address or delivery instructions after my order has been placed?",
+        "keywords": "change address, update delivery address, wrong shipping address, change shipping location",
+        "answer": "Address updates are possible within 60 minutes of order placement if the order is still in 'Processing' status. Once an order moves to 'Fulfilled' or 'In Transit', address changes must be requested directly through the courier's delivery management portal (e.g., UPS My Choice or FedEx Delivery Manager).",
+        "action_steps": "1. Check your order status in 'Orders'. 2. If 'Processing', click 'Edit Shipping Address'. 3. If already shipped, click the tracking link to request a courier redirect.",
+        "escalation_contact": "logistics@support.example.com"
+    },
+
+    # CANCELLATION
+    {
+        "faq_id": "FAQ-CAN-001",
+        "category": "cancellation",
+        "title": "Canceling an Order Before Shipment",
+        "question": "How do I cancel my order before it ships, and will I receive an immediate refund?",
+        "keywords": "cancel order, stop shipment, cancel purchase, cancel before shipping, order mistake",
+        "answer": "You can cancel any unshipped order directly from your account within 1 hour of purchase. Click 'Cancel Order' on your order details page. A full cancellation confirmation email will be sent immediately, and any pre-authorization holds will drop within 24-48 hours.",
+        "action_steps": "1. Open 'My Account' > 'Order History'. 2. Locate your order and click 'Cancel Order'. 3. Choose your cancellation reason and confirm.",
+        "escalation_contact": "orders@support.example.com"
+    },
+    {
+        "faq_id": "FAQ-CAN-002",
+        "category": "cancellation",
+        "title": "Canceling a Recurring Subscription or Auto-Renewal",
+        "question": "How can I cancel my recurring monthly or annual subscription so I am not billed again?",
+        "keywords": "cancel subscription, stop auto renew, unsubscribe, terminate membership, cancel recurring charge",
+        "answer": "You can cancel your subscription at any time without penalty. Once canceled, your premium features remain active until the end of your current prepaid billing cycle. You will not be billed again.",
+        "action_steps": "1. Navigate to 'Account Settings' > 'Subscriptions & Plans'. 2. Click 'Manage Subscription'. 3. Select 'Cancel Subscription' and complete the brief feedback step.",
+        "escalation_contact": "support@example.com"
+    },
+    {
+        "faq_id": "FAQ-CAN-003",
+        "category": "cancellation",
+        "title": "Cancel an Order Already in Transit",
+        "question": "Can I cancel an order that has already been shipped and is currently in transit?",
+        "keywords": "cancel shipped order, return in transit, refuse delivery, cancel after shipped",
+        "answer": "Orders already dispatched cannot be canceled mid-transit. However, you can simply refuse delivery when the courier arrives at your door, or use our prepaid return shipping portal once delivered to generate a complimentary return label.",
+        "action_steps": "1. Inform the delivery driver you are refusing package delivery. 2. The courier will mark the package 'Return to Sender'. 3. Once received at our depot, your full refund will be processed.",
+        "escalation_contact": "orders@support.example.com"
+    },
+
+    # ACCOUNT ISSUES
+    {
+        "faq_id": "FAQ-ACC-001",
+        "category": "account_issue",
+        "title": "Resetting Forgotten Password and Account Recovery",
+        "question": "I forgot my password or cannot access my account. How do I reset it?",
+        "keywords": "forgot password, reset password, locked out, account recovery, password reset link not received",
+        "answer": "Visit the login page and click 'Forgot Password'. Enter your registered email address to receive a secure password reset link valid for 30 minutes. If you do not see the email within 5 minutes, please verify your spam/junk folder.",
+        "action_steps": "1. Go to the login page and click 'Forgot Password'. 2. Enter your email and click 'Send Reset Link'. 3. Follow the instructions in the email to set a strong new password.",
+        "escalation_contact": "accounts@support.example.com"
+    },
+    {
+        "faq_id": "FAQ-ACC-002",
+        "category": "account_issue",
+        "title": "Account Locked or Suspended After Multiple Failed Attempts",
+        "question": "My account has been locked after several failed password attempts. How do I unlock it?",
+        "keywords": "account locked, account suspended, too many attempts, security lock, unlock profile",
+        "answer": "For security reasons, accounts are automatically locked for 30 minutes after 5 consecutive incorrect password entries. You can wait 30 minutes for the automated timer to expire, or use the self-service verification email to unlock immediately.",
+        "action_steps": "1. Check your email for an automated 'Security Alert: Account Locked' notice. 2. Click 'Verify Identity & Unlock'. 3. Complete email OTP verification.",
+        "escalation_contact": "security@support.example.com"
+    },
+    {
+        "faq_id": "FAQ-ACC-003",
+        "category": "account_issue",
+        "title": "Updating Profile Details, Email, and Two-Factor Authentication (2FA)",
+        "question": "How do I change my registered email address or reset two-factor authentication (2FA)?",
+        "keywords": "change email, update phone number, reset 2fa, two-factor auth lost, authenticator app lost",
+        "answer": "You can change your contact information in 'Account Settings' > 'Security'. Changing your email address requires confirmation from both your old and new email addresses. If you lost access to your 2FA authenticator app, you will need to submit photo ID verification to our security desk.",
+        "action_steps": "1. Log into your dashboard and click 'Profile & Security'. 2. Under '2FA', enter your backup emergency codes. 3. If backup codes are lost, contact security desk for manual identity review.",
+        "escalation_contact": "security@support.example.com"
+    },
+
+    # TECHNICAL SUPPORT
+    {
+        "faq_id": "FAQ-TECH-001",
+        "category": "technical_support",
+        "title": "Website or Mobile App Crashing on Checkout",
+        "question": "The mobile app or website freezes or crashes every time I try to complete my purchase.",
+        "keywords": "app crash, website freezing, blank screen, checkout freeze, button not clickable, bug",
+        "answer": "Checkout freezes are usually caused by stale browser cache, conflicting browser extensions (e.g. ad blockers or autofill scripts), or outdated mobile app builds. Clearing your browser cache or updating the mobile app to the latest version resolves over 90% of checkout issues.",
+        "action_steps": "1. Clear browser cookies and cache (Ctrl+Shift+Delete or Cmd+Shift+Delete). 2. Disable browser ad blockers or script blockers for checkout.example.com. 3. Update the app in App Store or Google Play Store.",
+        "escalation_contact": "techsupport@support.example.com"
+    },
+    {
+        "faq_id": "FAQ-TECH-002",
+        "category": "technical_support",
+        "title": "Server Error 500 or Service Unavailable",
+        "question": "I am receiving an HTTP 500 Internal Server Error or Service Unavailable message.",
+        "keywords": "error 500, internal server error, service unavailable, site down, 502 bad gateway, api error",
+        "answer": "An HTTP 500 error indicates a temporary server-side disruption or scheduled database maintenance. Our engineering team monitors system health 24/7, and most intermittent disruptions resolve within 5 to 15 minutes. Check status.example.com for live status updates.",
+        "action_steps": "1. Visit status.example.com to verify ongoing service status. 2. Wait 5 minutes and perform a hard refresh (Ctrl+F5 or Cmd+Shift+R). 3. If persistent, capture a screenshot and contact technical support.",
+        "escalation_contact": "techsupport@support.example.com"
+    },
+    {
+        "faq_id": "FAQ-TECH-003",
+        "category": "technical_support",
+        "title": "Promo Code or Coupon Not Applying",
+        "question": "Why is my promotional discount code showing as invalid or not applying to my cart total?",
+        "keywords": "promo code invalid, discount not applying, coupon expired, voucher code error",
+        "answer": "Promotional codes may fail if the code has expired, minimum cart value thresholds are not met, specific excluded brands are in your cart, or the voucher is restricted to first-time customer accounts. Please ensure code formatting matches exact capitalization.",
+        "action_steps": "1. Check promo code expiration date and terms. 2. Verify your cart reaches minimum qualifying spend. 3. Remove gift cards or clearance items that may be excluded from discount.",
+        "escalation_contact": "support@example.com"
+    }
+]
+
+df_kb = pd.DataFrame(knowledge_base)
+kb_path = os.path.join(DATA_DIR, "knowledge_base.csv")
+df_kb.to_csv(kb_path, index=False)
+print(f"Saved {len(df_kb)} knowledge base FAQ entries to {kb_path}")
